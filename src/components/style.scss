@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+
+body {
+    background-color: rgb(238, 238, 238);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.base-container {
+  width: 400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 5%;
+  margin-left: 35%;
+  background-color: white;
+
+  .header {
+    font-size: 24px;
+  }
+
+  .image {
+    width: 100px;
+    height: 50px;
+    padding-top: 40px;
+    padding-left: 30px;
+  }
+
+  h1, p {
+    padding-left: 30px;
+  }
+
+  .emaillabel {
+    color: grey;
+  }
+
+  p {
+    color: grey;
+    font-size: 15px;
+    font-style: normal;
+  }
+
+  .form {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: fit-content;
+      label {
+        font-size: 20px;
+      }
+      input[type=text] {
+        margin-top: 6px;
+        min-width: 18em;
+        height: 37px;
+        padding: 0px 10px;
+        font-size: 16px;
+        background-color: #ffffff;
+        border: 0;
+        border-radius: 4px;
+        margin-bottom: 31px;
+        transition: all 250ms ease-in-out;
+        border: 1px solid rgb(233, 233, 233);
+
+
+        &:focus {
+          outline: none;
+          box-shadow: 0px 0px 12px 0.8px #3474dbb2;
+        }
+      }
+
+      input[type=button] {
+        background-color: white;
+      }
+    }
+  }
+}
+
+.footer {
+  align-content: flex-start;
+  padding: 30px;
+}
+
+@media screen and (max-width: 420px) {
+    .base-container{
+        width: 300px;
+        margin-top: 25%;
+        margin-left: 10%;
+        margin-right: 10%;
+
+        .form{
+            .form-group{
+                input[type=text]{
+                    min-width: 4em;
+                }
+            }
+        }
+    }
+}
